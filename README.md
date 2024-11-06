@@ -1,27 +1,45 @@
-# Books
+# 📚 Books Search App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+This application allows users to search for their favorite books using the Google Books API. It displays book details, such as the title, description, and thumbnail, in a clean, responsive card layout.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Demo of the app: 
 
-## Code scaffolding
+![books](https://github.com/user-attachments/assets/3deeead0-1f57-42be-a8a9-41a58a2521c4)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Search for books** by title or keyword.
+- Display book details including title, description, and cover image.
+- Interactive search bar with placeholder guidance.
+- Responsive design with visually appealing book cards.
+- Loading state and "No Results" messages for seamless user experience.
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular** - Front-end framework for building the application.
+- **Google Books API** - To fetch book data based on search terms.
+- **RxJS** - For handling asynchronous data streams.
+- **HTML5 & SCSS** - For structuring and styling the UI.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Installation
 
-## Further help
+1. **Clone the repository:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   git clone https://github.com/Anastasia520/Books-Search-App.git
+   cd Books-Search-App
+
+2. **Install dependencies**
+
+   ```bash
+    npm install
+
+3. **Run the application:**
+
+   ```bash
+   ng serve
+ 
