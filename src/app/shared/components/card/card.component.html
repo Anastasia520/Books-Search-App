@@ -1,0 +1,25 @@
+<div class="book-card">
+  <div class="book-image">
+    <img
+      *ngIf="book.volumeInfo.imageLinks; else alternativeImage"
+      src="{{ book.volumeInfo.imageLinks.smallThumbnail }}"
+      alt="Thumbnail image"
+    />
+    <ng-template #alternativeImage>
+      <img src="assets/images/picture-not-found.avif" alt="Image not found" />
+    </ng-template>
+  </div>
+
+  <div class="book-info">
+    <h2 class="title">"{{ book.volumeInfo.title }}"</h2>
+    <h2 class="title">{{ book.volumeInfo.authors.toString() }}</h2>
+
+    <div class="description">
+      <span>{{
+        book.volumeInfo.description
+          ? book.volumeInfo.description
+          : "No description available"
+      }}</span>
+    </div>
+  </div>
+</div>

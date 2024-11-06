@@ -1,0 +1,9 @@
+<form [formGroup]="searchForm" class="search-bar">
+  <input
+    class="search-input"
+    [formControl]="searchTermControl"
+    type="text"
+    placeholder="Start typing to search..."
+    (keyup.enter)="onEnterPress()"
+  />
+</form>

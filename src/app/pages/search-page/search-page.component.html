@@ -1,0 +1,19 @@
+<h1 class="page-title">Find Your Favourite Book with Google Books</h1>
+
+<app-searchbar></app-searchbar>
+
+<ng-container *ngIf="books$ | async as books">
+  <ng-container *ngIf="books.length > 0; else noResult">
+    <div class="books-container">
+      <app-card *ngFor="let book of books" [book]="book"> </app-card>
+    </div>
+  </ng-container>
+
+  <ng-template #noResult>
+    <span>No result</span>
+  </ng-template>
+</ng-container>
+
+<ng-container *ngIf="isLoading$ | async">
+  <app-loader></app-loader>
+</ng-container>
