@@ -6,7 +6,9 @@ This application allows users to search for their favorite books using the Googl
 
 Demo of the app: 
 
-![books](https://github.com/user-attachments/assets/3deeead0-1f57-42be-a8a9-41a58a2521c4)
+https://github.com/user-attachments/assets/893fef3a-6995-4bbb-9d87-dc931243f944
+
+
 
 
 ## Features
